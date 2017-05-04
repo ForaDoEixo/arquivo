@@ -83,7 +83,7 @@ nav.post-nav
 }
 </style>
 <div id="main-content">
-	<div class="container">
+	<div class="container single-news">
 		<div id="content-area" class="clearfix">
 			<div id="left-area">
 				<?php while ( have_posts() ) : the_post(); ?>

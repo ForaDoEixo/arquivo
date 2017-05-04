@@ -93,7 +93,7 @@ nav.post-nav
 					<div class="et_post_meta_wrapper">
 						<p class="post-meta"><span class="published"><?php the_date('d/m/Y'); ?><span class="dashicons dashicons-clock"></span><?php the_time(); ?></span></p>
 						<a href="<?php echo get_post_permalink(get_the_ID()); ?>"><h1 class="entry-title"><?php the_title(); ?></h1></a>
-						<div class="nj_author_meta_mob"><a href="<?php echo get_author_posts_url($author_ID); ?>">
+						<div class="nj_author_meta_mini"><a href="<?php echo get_author_posts_url($author_ID); ?>">
 							<img src="<?php the_author_meta('avatar',$author_ID); ?>">
 							<span>por <?php the_author_meta('display_name',$author_ID); ?></span>
 						</a></div>
@@ -105,9 +105,9 @@ nav.post-nav
 
 
 
-							<div class="et_pb_row et_pb_row_0 et_pb_row_3-4_1-4">
+							<div class="et_pb_row et_pb_row_0 et_pb_row">
 
-								<div class="post-body et_pb_column et_pb_column_3_4  et_pb_column_0">
+								<div class="post-body et_pb_column et_pb_column  et_pb_column_0">
 									<div class="et_pb_module et_pb_space et_pb_divider et_pb_divider_0"></div>
 									<div class="top_ss"><?php echo do_shortcode("[addtoany]"); ?></div>
 									<?php the_content(); ?>
@@ -125,23 +125,19 @@ nav.post-nav
 										<div class="fb-comments" data-href="<?php the_permalink(); ?>" data-width="100%" data-numposts="10" data-order-by="social" data-colorscheme="light"></div>
 									</div>
 								</div> <!-- .et_pb_column -->
-								<?php nj_author_card($author_ID); ?>
 
-					</div> <!-- .et_pb_section -->
-				</div> <!-- .entry-content -->
-				<div class="et_post_meta_wrapper">
+							</div> <!-- .et_pb_section -->
+						</div> <!-- .entry-content -->
+						<div class="et_post_meta_wrapper">
 
-				</div> <!-- .et_post_meta_wrapper -->
-			</article>
+						</div> <!-- .et_post_meta_wrapper -->
+					</article>
 
-		<?php endwhile; ?>
-	</div> <!-- #left-area -->
-	<div id="know-more-author">Conheça outros colunistas e suas opiniões!</div>
-	<?php nj_destaque_slider(5000); ?>
-</div> <!-- #content-area -->
+				<?php endwhile; ?>
+			</div> <!-- #left-area -->
 
-</div> <!-- .container -->
-</div> <!-- #main-content -->
+		</div> <!-- .container -->
+	</div> <!-- #main-content -->
 
 
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
